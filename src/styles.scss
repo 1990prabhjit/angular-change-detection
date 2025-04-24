@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+#app-component {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 1200px;
+    background-color: orange;
+    padding-top: 15px;
+}
+
+#parent-one, #parent-two{
+    height: 200px;
+    width: 500px;
+    border: 1px solid green;
+    background-color: pink;
+}
+#parent-one-child-one,
+#parent-one-child-two,
+#parent-two-child-one,
+#parent-two-child-two {
+    height: 50px;
+    width: 200px;
+    border: 2px solid red;
+    background-color: lightblue;
+    p {
+        display: inline;
+    }
+}
+
+button {
+    height: fit-content;
+    width: fit-content;
+}
+
