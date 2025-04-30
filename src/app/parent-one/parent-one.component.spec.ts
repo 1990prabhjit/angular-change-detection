@@ -20,4 +20,12 @@ describe('ParentOneComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Check if onBtnClick output emitted or not:', () => {
+    spyOn(component.onBtnClick, 'emit');
+
+    component.justClicked();
+
+    expect(component.onBtnClick.emit).toHaveBeenCalled();
+  })
 });
